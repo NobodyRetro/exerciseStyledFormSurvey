@@ -1,0 +1,60 @@
+.pallet {
+  color: #f9ff00; /* Sunset Yellow */
+  color: #b2654c; /* Brown Sugar */
+  color: #d87c01; /* Fulvous */
+  color: #4d3258; /* English Violet: rgb(77,50,88) */
+  color: #7b6dcc; /* Medium State Blue: rgb(123, 109, 204) */
+  color: #000707; /* Black */
+}
+
+.title {
+  text-align: center;
+}
+
+body {
+  background-image: url(background.jpg);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+#requiredField {
+  text-shadow: 1px 1px 3px black;
+}
+
+form {
+  background-color: rgba(123, 109, 204, 80%);
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 25px;
+  width: 800px;
+}
+
+input,
+textarea,
+select,
+#submitBTN {
+  background-color: rgba(77, 50, 88, 90%);
+  border: 1px solid #000707;
+  color: #f9ff00;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+#name,
+#email,
+#age,
+#role,
+#favoriteFeature,
+textarea,
+#submitBTN {
+  width: 100%;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}

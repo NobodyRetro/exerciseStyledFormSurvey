@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HTML Basics: Exercise Survey Form</title>
+    <meta name="description" content="The Survey Form Exercise" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--
+    Add a title above the form
+    Add a background image via CSS to the webpage
+    And the following form elements as shown in the mockup. Be sure each field has a type, label, and proper form attributes.
+    Add opacity to the form background
+    For the "current role" dropdown, add the following options: [Student, Full Time Job, Full Time Learner, Prefer not to say, other]
+    For the "favorite feature" dropdown, add the following options: [Challenges, Projects, Community, Mentorship]
+    Post a screenshot of your finished exercise in the #post-your-exercises channel on Discord -->
+
+  <body>
+    <div class="title">
+      <h1>Devslopes Survey Form</h1>
+      <div>Thank you for taking the time to help us improve the platform</div>
+    </div>
+
+    <form action="./done.php">
+      <label name="name"
+        >Name<span id="requiredField" style="color: red">*</span></label
+      ><br />
+      <input
+        id="name"
+        type="text"
+        placeholder="Enter your name"
+        required
+      /><br /><br />
+
+      <label name="email"
+        >Email<span id="requiredField" style="color: red">*</span></label
+      ><br />
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your Email"
+        required
+      /><br /><br />
+
+      <label name="age">Age(Optional)</label><br />
+      <input id="age" name="age" type="text" placeholder="Age" />
+      <br /><br />
+
+      <label id="role" name="role"
+        >Which option best describes your current role?</label
+      ><br />
+      <select name="role" id="role">
+        <option value="" disabled selected hidden>Select Current Role</option>
+        <option value="student">Student</option>
+        <option value="fullTimeJob">Full-Time Job</option>
+        <option value="fullTimeLearner">Full-Time Learner</option>
+        <option value="preferNotToSay">Prefer Not To Say</option>
+        <option value="otherRole">Other</option>
+      </select>
+      <br /><br />
+
+      <label name="recommend">Would you recommend Devslopes to a friend?</label
+      ><br />
+
+      <input name="recommend" id="definitely" type="radio" value="definitely" />
+      <label for="definitely">Definitely</label>
+      <br />
+
+      <input name="recommend" id="maybe" type="radio" value="maybe" />
+      <label for="maybe">Maybe</label>
+      <br />
+
+      <input name="recommend" id="notSure" type="radio" value="notSure" />
+      <label for="notSure">Not Sure</label>
+      <br /><br />
+
+      <label name="favoriteFeature"
+        >What is your favorite feature of Devslopes?</label
+      ><br />
+
+      <select name="favoriteFeature" id="favoriteFeature">
+        <option value="" selected disabled hidden>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="mentorship">Mentorship</option>
+      </select>
+      <br /><br />
+
+      <label for="improvements"
+        >What would you like to see improved? (Check all that apply)</label
+      ><br />
+
+      <input
+        name="improvements"
+        id="feChallenges"
+        type="checkbox"
+        value="feChallenges"
+      />
+      <label for="feChallenges">Front-End Challenges</label><br />
+
+      <input
+        name="improvements"
+        id="beChallenges"
+        type="checkbox"
+        value="beChallenges"
+      />
+      <label for="beChallenges">Back-End Challenges</label><br />
+
+      <input
+        name="improvements"
+        id="challenges"
+        type="checkbox"
+        value="challenges"
+      />
+      <label for="challenges">Challenges</label><br />
+
+      <input name="improvements" id="videos" type="checkbox" value="videos" />
+      <label for="videos">Videos</label><br />
+
+      <input name="improvements" id="meetUps" type="checkbox" value="meetUps" />
+      <label for="meetUps">Online Meetups</label><br />
+
+      <input
+        name="improvements"
+        id="community"
+        type="checkbox"
+        value="community"
+      />
+      <label for="community">Community</label><br />
+      <br />
+
+      <label for="comments">Any comments or suggestions?</label><br />
+      <textarea
+        name="comments"
+        id="comments"
+        rows="5"
+        cols="40"
+        placeholder="Enter your comments here."
+      ></textarea
+      ><br /><br />
+
+      <input id="submitBTN" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
